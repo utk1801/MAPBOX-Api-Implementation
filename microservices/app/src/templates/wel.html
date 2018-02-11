@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}{% endblock %}
+{% block head %}
+	{{ super() }}
+	
+  <link href= "{{ url_for('static', filename='css/home.css') }}" rel="stylesheet" />
+<header>
+	<a href="/logout"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_LSMB-JfAQUZb7OVcQCsgiJjy5KoFvmmfQCvfFW_WOjwFc-ng" width="30" height="30" align="right" alt="Logout"></a>
+</header>
+{% endblock %}
+{% block content %}
+<p align="right">
+	<font color="#BF360C" size="4px"><b>Hello {{ name }}</b></font>
+	<br/><font color="brown" size="2px"><a href="/change_p" style="text-decoration: none;">Change password?</a></font></p>-
+<br/>
+<br/>
+<div class="head">
+<table>
+	<tr>
+		<font color="#BF360C" size="9px"><a style="text-decoration: none" href="/locate">🌎</font><font color="#BF360C" size="9px"> Use MapBox-gl API to trace a location nearby</a></font>
+	</tr>
+	<br/>
+	<br/>
+	<tr>
+		<font color="#BF360C" size="9px"><a style="text-decoration: none" href="/navigate">🌎</font><font color="#BF360C" size="9px"> Use MapBox-gl API to find travelling distance </a></font>
+	</tr>
+	<br/>
+	<br/>
+	<!--<tr>
+		<font color="#BF360C" size="9px"><a style="text-decoration: none" href="/navigate_2">🌎</font><font color="#BF360C" size="9px"> Use MapBox-REST API to find travelling distance </a></font>		
+	</tr>
+	-->
+</table>
+</div>
+{% endblock %}
