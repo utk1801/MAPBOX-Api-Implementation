@@ -1,7 +1,7 @@
 # MapBox
 
  Hasura project on [Mapbox](https://www.mapbox.com/) Geolocation API
-### Also published on [Hasura-Hub] (https://hasura.io/hub/project/utkarsh/www.github.com/utk1801) .
+### Also published on [Hasura-Hub](https://hasura.io/hub/project/utkarsh/www.github.com/utk1801) .
 
 ## Getting started
 
